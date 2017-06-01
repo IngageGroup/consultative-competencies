@@ -81,17 +81,23 @@
 
 .me {
   background-color: #a9d18e;
-  color: #55763e;
+  color: #385723;
+  text-shadow: 1px 1px 1px rgba(152, 173, 137, 0.004) !important;
+  font-size: medium;
 }
 
 .others {
   background-color: #ffd966;
-  color: #b8952d;
+  color: #7f6000;
+  text-shadow: 1px 1px 1px rgba(199, 178, 114, 0.004) !important;
+  font-size: medium;
 }
 
 .work {
   background-color: #9dc3e6;
-  color: #5983ab;
+  color: #1f4e79;
+  text-shadow: 1px 1px 1px rgba(222, 235, 247, 0.004) !important;
+  font-size: medium;
 }
 
 .container .honeycomb .hex .wrapper .blank {
