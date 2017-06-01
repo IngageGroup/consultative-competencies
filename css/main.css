@@ -1,17 +1,16 @@
 :root {
-  --hex-column-width: 62px;
-  --hex-width: 36px;
+  --hex-column-width: 140px;
+  --hex-width: calc(var(--hex-column-width) * .581);
   --hex-height: calc(var(--hex-width) * 2);
   --hex-vertical-border: calc(var(--hex-width) / 2);
   --hex-horizontal-border: calc(var(--hex-column-width) / 2);
+  font-family: "Arial Narrow",Arial,sans-serif;
 }
 .container {
   position: relative;
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
-  height: 500px;
-  /*-webkit-perspective: 700px;
-  perspective: 700px;*/
+  height: 800px;
   z-index: 10;
   overflow: hidden;
 }
@@ -39,19 +38,16 @@
 .container .honeycomb .column {
   display: block;
   float: left;
-  /*width: 62px;*/
   width: var(--hex-column-width);
 }
 
-.container .honeycomb .column:nth-child(odd) { margin-top: 36px; }
+.container .honeycomb .column:nth-child(odd) { margin-top: var(--hex-width); }
 
 .container .honeycomb .hex {
   display: block;
   position: relative;
   float: left;
   margin: 0;
-  /*height: 72px;*/
-  /*width: 62px;*/
   height: var(--hex-height);
   width: var(--hex-column-width);
   color: #fff;
@@ -61,15 +57,10 @@
   transform-style: preserve-3d;
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
- filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
-  opacity: 0.5;
 }
 
 .container .honeycomb .hex:hover {
-  opacity: 1;
-  /*-ms-transform: translateZ(20px);
-  -webkit-transform: translateZ(20px);
-  transform: translateZ(20px);*/
+  opacity: 0.75;
   -webkit-transition-duration: 200ms;
   transition-duration: 200ms;
 }
@@ -77,9 +68,6 @@
 .container .honeycomb .hex:hover .tooltip {
  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
   opacity: 1;
-  /*-ms-transform: rotateX(-90deg) translateZ(-40px) translateY(-50px);
-  -webkit-transform: rotateX(-90deg) translateZ(-40px) translateY(-50px);
-  transform: rotateX(-90deg) translateZ(-40px) translateY(-50px);*/
 }
 
 .container .honeycomb .hex .wrapper {
@@ -178,25 +166,10 @@
 }
 
 .container .honeycomb .hex .content {
-  display: block;
+  display: inline-block;
   position: absolute;
-  top: 20;
-  left: -10px;
   text-align: center;
-  width: 40px;
- /*filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
-  opacity: 0;
-  -moz-transition: all 0.3s ease-out 0.1s;
-  -o-transition: all 0.3s ease-out 0.1s;
-  -webkit-transition: all 0.3s ease-out;
-  -webkit-transition-delay: 0.1s;
-  -webkit-transition: all 0.3s ease-out 0.1s;
-  transition: all 0.3s ease-out 0.1s;
-  -ms-transform: rotateX(-90deg) translateZ(-40px) translateY(-40px);
-  -webkit-transform: rotateX(-90deg) translateZ(-40px) translateY(-40px);
-  transform: rotateX(-90deg) translateZ(-40px) translateY(-40px);
-  pointer-events: none;
-  -webkit-font-smoothing: antialiased;*/
+  z-index: 75;
 }
 
 .container .honeycomb .hex .tooltip strong {
@@ -220,8 +193,6 @@
   left: -15%;
   height: 130%;
   width: 130%;
-  /*background-image: -webkit-radial-gradient(closest-side, rgba(23, 29, 37, 0), #171d25);
-  background-image: radial-gradient(closest-side, rgba(23, 29, 37, 0), #171d25);*/
  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
   opacity: 0.9;
   -ms-transform: translateZ(10px);
@@ -231,13 +202,14 @@
 }
 
 .hexagon {
-  display: block;
+  display: flex;
   position: absolute;
-  /*width: 36px;*/
-  /*height: 62px;*/
   width: var(--hex-width);
   height: var(--hex-column-width);
   background-color: #ffffff;
+
+  justify-content: center;
+  align-items: center;
 }
 
 .hexagon:before,
@@ -247,22 +219,16 @@
   float: left;
   border-top: var(--hex-horizontal-border) solid transparent;
   border-bottom: var(--hex-horizontal-border) solid transparent;
-  /*border-top: 31px solid transparent;
-  border-bottom: 31px solid transparent;*/
 }
 
 .hexagon:before {
   border-right: var(--hex-vertical-border) solid #ffffff;
   left: calc(-1 * var(--hex-vertical-border));
-  /*border-right: 18px solid #ffffff;
-  left: -18px;*/
 }
 
 .hexagon:after {
   border-left: var(--hex-vertical-border) solid #ffffff;
   right: calc(-1 * var(--hex-vertical-border));
-  /*border-left: 18px solid #ffffff;
-  right: -18px;*/
 }
 
 .hidden { display: none; }
