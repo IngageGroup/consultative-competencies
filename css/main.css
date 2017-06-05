@@ -1,5 +1,5 @@
 :root {
-  --hex-column-width: 140px;
+  --hex-column-width: 100px;
   --hex-width: calc(var(--hex-column-width) * .581);
   --hex-height: calc(var(--hex-width) * 2);
   --hex-vertical-border: calc(var(--hex-width) / 2);
@@ -24,14 +24,6 @@
   text-align: center;
   height: 450px;
   width: 930px;
-  -ms-transform: rotateX(45deg) rotateY(0deg);
-  -webkit-transform: rotateX(45deg) rotateY(0deg);
-  transform: rotateX(45deg) rotateY(0deg);
-  -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-  -ms-transform-origin: center 65%;
-  -webkit-transform-origin: center 65%;
-  transform-origin: center 65%;
   z-index: 5;
 }
 
@@ -50,11 +42,9 @@
   margin: 0;
   height: var(--hex-height);
   width: var(--hex-column-width);
-  color: #fff;
+  color: #ffffff;
   cursor: pointer;
   text-decoration: none;
-  -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d;
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
