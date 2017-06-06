@@ -4,6 +4,12 @@
   --hex-height: calc(var(--hex-width) * 2);
   --hex-vertical-border: calc(var(--hex-width) / 2);
   --hex-horizontal-border: calc(var(--hex-column-width) / 2);
+  --me-color: #385723;
+  --me-background-color: #a9d18e;
+  --work-color: #1f4e79;
+  --work-background-color: #9dc3e6;
+  --others-color: #7f6000;
+  --others-background-color: #ffd966;
   font-family: "Arial Narrow",Arial,sans-serif;
 }
 .container {
@@ -70,26 +76,23 @@
 }
 
 .me {
-  border-right-color: #a9d18e;
-  background-color: #a9d18e !important;
-  color: #385723 !important;
-  text-shadow: 1px 1px 1px rgba(152, 173, 137, 0.004) !important;
+  background-color: var(--me-background-color) !important;
+  color: var(--me-color) !important;
+  text-shadow: 1px 1px 1px rgba(var(--me-color), 0.004) !important;
   font-size: medium;
 }
 
 .others {
-  border-right-color: #ffd966;
-  background-color: #ffd966 !important;
-  color: #7f6000 !important;
-  text-shadow: 1px 1px 1px rgba(199, 178, 114, 0.004) !important;
+  background-color: var(--others-background-color) !important;
+  color: var(--others-color) !important;
+  text-shadow: 1px 1px 1px rgba(var(--others-color), 0.004) !important;
   font-size: medium;
 }
 
 .work {
-  border-right-color: #9dc3e6;
-  background-color: #9dc3e6 !important;
-  color: #1f4e79 !important;
-  text-shadow: 1px 1px 1px rgba(222, 235, 247, 0.004) !important;
+  background-color: var(--work-background-color) !important;
+  color: var(--work-color) !important;
+  text-shadow: 1px 1px 1px rgba(var(--work-color), 0.004) !important;
   font-size: medium;
 }
 
@@ -107,61 +110,39 @@
 }
 
 .container .honeycomb .hex .wrapper .me {
-  background: #a9d18e; 
+  background: var(--me-background-color);
 }
 
 .container .honeycomb .hex .wrapper .me:before { 
-  border-right-color: #a9d18e; 
+  border-right-color: var(--me-background-color);
 }
 
 .container .honeycomb .hex .wrapper .me:after { 
-  border-left-color: #a9d18e; 
+  border-left-color: var(--me-background-color);
 }
 
 .container .honeycomb .hex .wrapper .others {
-  background: #ffd966; 
+  background: var(--others-background-color);
 }
 
 .container .honeycomb .hex .wrapper .others:before { 
-  border-right-color: #ffd966; 
+  border-right-color: var(--others-background-color);
 }
 
 .container .honeycomb .hex .wrapper .others:after { 
-  border-left-color: #ffd966; 
+  border-left-color: var(--others-background-color);
 }
 
 .container .honeycomb .hex .wrapper .work {
-  background: #9dc3e6; 
+  background: var(--work-background-color);
 }
 
 .container .honeycomb .hex .wrapper .work:before { 
-  border-right-color: #9dc3e6; 
+  border-right-color: var(--work-background-color);
 }
 
 .container .honeycomb .hex .wrapper .work:after { 
-  border-left-color: #9dc3e6; 
-}
-
-.container .honeycomb .hex .tooltip {
-  display: block;
-  position: absolute;
-  top: 0;
-  left: -10px;
-  text-align: center;
-  width: 200px;
- filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
-  opacity: 0;
-  -moz-transition: all 0.3s ease-out 0.1s;
-  -o-transition: all 0.3s ease-out 0.1s;
-  -webkit-transition: all 0.3s ease-out;
-  -webkit-transition-delay: 0.1s;
-  -webkit-transition: all 0.3s ease-out 0.1s;
-  transition: all 0.3s ease-out 0.1s;
-  -ms-transform: rotateX(-90deg) translateZ(-40px) translateY(-40px);
-  -webkit-transform: rotateX(-90deg) translateZ(-40px) translateY(-40px);
-  transform: rotateX(-90deg) translateZ(-40px) translateY(-40px);
-  pointer-events: none;
-  -webkit-font-smoothing: antialiased;
+  border-left-color: var(--work-background-color);
 }
 
 .container .honeycomb .hex .content {
@@ -169,20 +150,6 @@
   position: absolute;
   text-align: center;
   z-index: 75;
-}
-
-.container .honeycomb .hex .tooltip strong {
-  display: block;
-  font: 600 26px/1.1 verdana, sans-serif;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  text-shadow: -1px -1px 2px rgba(0, 0, 0, 0.8);
-}
-
-.container .honeycomb .hex .tooltip small {
-  display: block;
-  font: 15px/1.1 verdana, sans-serif;
 }
 
 .container .honeycomb .shadows {
