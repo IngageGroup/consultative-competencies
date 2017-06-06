@@ -70,22 +70,25 @@
 }
 
 .me {
-  background-color: #a9d18e;
-  color: #385723;
+  border-right-color: #a9d18e;
+  background-color: #a9d18e !important;
+  color: #385723 !important;
   text-shadow: 1px 1px 1px rgba(152, 173, 137, 0.004) !important;
   font-size: medium;
 }
 
 .others {
-  background-color: #ffd966;
-  color: #7f6000;
+  border-right-color: #ffd966;
+  background-color: #ffd966 !important;
+  color: #7f6000 !important;
   text-shadow: 1px 1px 1px rgba(199, 178, 114, 0.004) !important;
   font-size: medium;
 }
 
 .work {
-  background-color: #9dc3e6;
-  color: #1f4e79;
+  border-right-color: #9dc3e6;
+  background-color: #9dc3e6 !important;
+  color: #1f4e79 !important;
   text-shadow: 1px 1px 1px rgba(222, 235, 247, 0.004) !important;
   font-size: medium;
 }

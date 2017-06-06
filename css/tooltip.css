@@ -1,8 +1,9 @@
 /* Hover tooltips */
-/*.field-tip {
+/*.field-tip {*/
+.container .honeycomb .hex {
   position:relative;
   cursor:help;
-}*/
+}
 
 /*.field-tip .tip-content {*/
 .container .honeycomb .hex .description {
@@ -13,8 +14,8 @@
   width:200px;
   margin-right:-220px; /* width + left/right padding */
   padding:10px;
-  color:#fff;
-  background:#333;
+  /*color:#fff;
+  background:#333;*/
   -webkit-box-shadow:2px 2px 5px #aaa;
   -moz-box-shadow:2px 2px 5px #aaa;
   box-shadow:2px 2px 5px #aaa;
@@ -37,13 +38,14 @@
   height:0;
   margin-top:-8px; /* - border width */
   border:8px solid transparent;
-  border-right-color:#333;
+  border-right-color:inherit;
   z-index:-1;
 }
 
 /*.field-tip:hover .tip-content {*/
 .container .honeycomb .hex:hover .description {
-  right:-20px;
+  right:-5px;
   opacity:1;
   z-index: 100;
+  border: 2px solid;
 }
