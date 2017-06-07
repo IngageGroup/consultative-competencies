@@ -18,7 +18,7 @@
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
   height: 650px;
-  width: 800px;
+  width: 875px;
   z-index: 10;
   overflow: hidden;
 }
@@ -31,7 +31,7 @@
   /*left: 50%;*/
   text-align: center;
   height: 650px;
-  width: 800px;
+  width: 875px;
   z-index: 5;
 }
 
