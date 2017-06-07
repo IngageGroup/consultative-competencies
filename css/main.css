@@ -17,7 +17,8 @@
   position: relative;
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
-  height: 800px;
+  height: 650px;
+  width: 650px;
   z-index: 10;
   overflow: hidden;
 }
@@ -25,12 +26,12 @@
 .container .honeycomb {
   display: block;
   position: absolute;
-  margin-left: -465px;
-  padding-left: 18px;
-  left: 50%;
+  /*margin-left: -640px;*/
+  padding-left: 30px;
+  /*left: 50%;*/
   text-align: center;
-  height: 450px;
-  width: 930px;
+  height: 650px;
+  width: 650px;
   z-index: 5;
 }
 
