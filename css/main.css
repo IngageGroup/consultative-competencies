@@ -77,11 +77,26 @@
   width: 100%;
 }
 
+.title {
+  font-family: "Nunito",Arial,sans-serif;
+  font-size: xx-large;
+  font-weight: bold;
+  background-color: white;
+  display: block;
+  position: absolute;
+}
+
 .me {
   background-color: var(--me-background-color) !important;
   color: var(--me-color) !important;
   text-shadow: 1px 1px 1px rgba(var(--me-color), 0.004) !important;
   font-size: medium;
+}
+
+#me-title {
+  color: var(--me-color);
+  top: 0px;
+  left: 15px;
 }
 
 .others {
@@ -91,11 +106,23 @@
   font-size: medium;
 }
 
+#others-title {
+  color: var(--others-color);
+  top: 200px;
+  left: 620px;
+}
+
 .work {
   background-color: var(--work-background-color) !important;
   color: var(--work-color) !important;
   text-shadow: 1px 1px 1px rgba(var(--work-color), 0.004) !important;
   font-size: medium;
+}
+
+#work-title {
+  color: var(--work-color);
+  top: 438px;
+  left: 0px;
 }
 
 .container .honeycomb .hex .wrapper .blank {
@@ -152,6 +179,10 @@
   position: absolute;
   text-align: center;
   z-index: 75;
+}
+
+.container .honeycomb .hex .content:hover {
+  text-decoration: underline;
 }
 
 .container .honeycomb .shadows {
