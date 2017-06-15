@@ -56,7 +56,7 @@
 }
 
 .container .honeycomb .hex:hover {
-  opacity: 0.75;
+  /*opacity: 0.75;*/ /* This creates a new stacking context, causing tooltips to get obstructed */
   -webkit-transition-duration: 200ms;
   transition-duration: 200ms;
 }

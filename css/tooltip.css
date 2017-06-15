@@ -1,9 +1,8 @@
-.container .honeycomb .hex {
-  position:relative;
+.hex {
   cursor:help;
 }
 
-.container .honeycomb .hex .description {
+.description {
   display: block;
   position:absolute;
   top:-10px; /* - top padding */
@@ -23,7 +22,7 @@
   z-index: 100 !important;
 }
 
-.container .honeycomb .hex .description:before {
+.description:before {
   content:' '; /* Must have content to display */
   position:absolute;
   top:50%;
@@ -36,7 +35,7 @@
   z-index:-1;
 }
 
-.container .honeycomb .hex:hover .description {
+:hover .description {
   right:-5px;
   opacity:1;
   z-index: 100 !important;
