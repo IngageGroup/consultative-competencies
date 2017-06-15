@@ -12,3 +12,4 @@ This will eventually be published on Ingage Connect, but for now is viewable as 
 - [X] Colors are reversed on hover (should be darker when not hovered, lighter when hovered)
 - [X] Add titles on each category, per the [design](https://ingagegroup.github.io/consultative-competencies/consultative-competencies-design.png)
 - [X] Link each entry click to wiki page
+- [ ] Decrease margins between cells in honeycomb (driving me nuts, can't figure it out!)
