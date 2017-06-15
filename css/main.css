@@ -26,9 +26,7 @@
 .container .honeycomb {
   display: block;
   position: absolute;
-  /*margin-left: -640px;*/
   padding-left: 30px;
-  /*left: 50%;*/
   text-align: center;
   height: 650px;
   width: 815px;
@@ -61,11 +59,6 @@
   opacity: 0.75;
   -webkit-transition-duration: 200ms;
   transition-duration: 200ms;
-}
-
-.container .honeycomb .hex:hover .tooltip {
- filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
-  opacity: 1;
 }
 
 .container .honeycomb .hex .wrapper {
@@ -183,21 +176,6 @@
 
 .container .honeycomb .hex .content:hover {
   text-decoration: underline;
-}
-
-.container .honeycomb .shadows {
-  display: block;
-  position: absolute;
-  top: -15%;
-  left: -15%;
-  height: 130%;
-  width: 130%;
- filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
-  opacity: 0.9;
-  -ms-transform: translateZ(10px);
-  -webkit-transform: translateZ(10px);
-  transform: translateZ(10px);
-  pointer-events: none;
 }
 
 .hexagon {

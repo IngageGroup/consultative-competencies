@@ -1,11 +1,8 @@
-/* Hover tooltips */
-/*.field-tip {*/
 .container .honeycomb .hex {
   position:relative;
   cursor:help;
 }
 
-/*.field-tip .tip-content {*/
 .container .honeycomb .hex .description {
   display: block;
   position:absolute;
@@ -26,7 +23,6 @@
   z-index: 100 !important;
 }
 
-/*.field-tip .tip-content:before {*/
 .container .honeycomb .hex .description:before {
   content:' '; /* Must have content to display */
   position:absolute;
@@ -40,7 +36,6 @@
   z-index:-1;
 }
 
-/*.field-tip:hover .tip-content {*/
 .container .honeycomb .hex:hover .description {
   right:-5px;
   opacity:1;
