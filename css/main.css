@@ -41,6 +41,10 @@
 
 .container .honeycomb .column:nth-child(odd) { margin-top: var(--hex-width); }
 
+.wrapper .core {
+  font-weight: bolder;
+}
+
 .container .honeycomb .hex {
   display: block;
   position: relative;
