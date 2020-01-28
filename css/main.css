@@ -240,6 +240,9 @@ body {
  .comp-card .mdc-card__primary-action:hover::before {
    opacity: 0;
  }
+ .mdc-card__primary-action:not(.mdc-ripple-upgraded):focus::before {
+   opacity: 0;
+ }
 .card-link {
   text-decoration: none;
 }
@@ -264,7 +267,7 @@ body {
 
 .banner-container {
   background-color: #0071c0;
-  padding: 1em 10em;
+  padding: 1em 2em;
 }
 .banner-content {
   margin: auto;
@@ -300,4 +303,7 @@ body {
 }
 .text-bottom-container {
   padding: 2em 10em;
+}
+.dark-link {
+  color: #212121;
 }
